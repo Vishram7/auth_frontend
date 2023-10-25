@@ -24,7 +24,7 @@ const Signup = () => {
     const handleSubmit = async(e) => {
         e.preventDefault()
         try{
-            const response = await axios.post(`${API_URL}signin/verify`, formData)
+            const response = await axios.post(`${API_URL}/signin/verify`, formData)
             console.log(response)
             if(response.data === true){
                 alert("registration link sent to email")

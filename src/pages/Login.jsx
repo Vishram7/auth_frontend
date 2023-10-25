@@ -27,7 +27,7 @@ const handleChange = (e) => {
 const handleSubmit = async (e) => {
   e.preventDefault()
 
-  const response = await axios.post(`${API_URL}login`, formData)
+  const response = await axios.post(`${API_URL}/login`, formData)
   console.log(response)
 
   if(response.data === "Invalid User name or Password"){

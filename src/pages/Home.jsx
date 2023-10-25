@@ -25,7 +25,7 @@ const Home = () => {
         }
       }
 
-      const response = await axios.get(`${API_URL}home`, config)
+      const response = await axios.get(`${API_URL}/home`, config)
       console.log(response)
 
       if(response.data === "Invalid Token"){
